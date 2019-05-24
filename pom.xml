@@ -8,7 +8,7 @@
     <artifactId>designquestions</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>Weather</module>
+        <module>weatherapp</module>
     </modules>
     <build>
         <plugins>
