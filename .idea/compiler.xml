@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="weatherapp" />
+        <module name="api-rate-limiter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-rate-limiter" target="8" />
+      <module name="designquestions" target="8" />
       <module name="weatherapp" target="1.5" />
     </bytecodeTargetLevel>
   </component>
