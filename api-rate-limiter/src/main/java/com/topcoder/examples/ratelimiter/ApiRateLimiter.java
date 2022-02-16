@@ -12,9 +12,6 @@ public class ApiRateLimiter extends HandlerInterceptorAdapter {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        if (policy.limit()) {
-            return true;
-        }
-        return false;
+       return policy.limit();
     }
 }
