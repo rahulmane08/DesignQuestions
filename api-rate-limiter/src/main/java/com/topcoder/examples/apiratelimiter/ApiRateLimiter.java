@@ -8,8 +8,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 @AllArgsConstructor
 public class ApiRateLimiter extends HandlerInterceptorAdapter {
-    private final int limit;
-    private final LimiterPolicy policy;
+    private final AbstractLimiterPolicy policy;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
