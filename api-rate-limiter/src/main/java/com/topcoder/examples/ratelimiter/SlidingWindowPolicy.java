@@ -1,4 +1,4 @@
-package com.topcoder.examples.apiratelimiter;
+package com.topcoder.examples.ratelimiter;
 
 public class SlidingWindowPolicy extends AbstractLimiterPolicy {
     public SlidingWindowPolicy(int limit) {

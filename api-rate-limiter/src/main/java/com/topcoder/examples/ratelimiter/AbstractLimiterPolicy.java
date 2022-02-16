@@ -1,4 +1,4 @@
-package com.topcoder.examples.apiratelimiter;
+package com.topcoder.examples.ratelimiter;
 
 import lombok.AllArgsConstructor;
 

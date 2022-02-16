@@ -1,4 +1,4 @@
-package com.topcoder.examples.apiratelimiter;
+package com.topcoder.examples.ratelimiter;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
