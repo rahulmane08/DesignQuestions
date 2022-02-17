@@ -18,6 +18,7 @@ public class SlidingWindowPolicy extends AbstractLimiterPolicy {
 
         long currentRequestTs = System.currentTimeMillis();
         if (isUnderLimit(currentRequestTs)) {
+            // window is not full, request can be served.
             return true;
         }
 
