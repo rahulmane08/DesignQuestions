@@ -14,6 +14,8 @@ public class ApiRateLimiterConfiguration {
     @Bean("limiterPolicy")
     public LimiterPolicy limiterPolicy() {
         int limit = Integer.parseInt(System.getProperty("rate.limit", "200"));
-        return new SlidingWindowPolicy(limit);
+        long durationInMillis = Long.parseLong(
+                System.getProperty("window.duration.millis", String.valueOf(60_000))); // default = 1min
+        return new SlidingWindowPolicy(limit, durationInMillis);
     }
 }
